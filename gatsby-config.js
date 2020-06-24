@@ -3,7 +3,7 @@ module.exports = {
     title: `Welcome to Shivanshu's blog`,
     author: {
       name: `Shivanshu,`,
-      summary: `someone who tends to find the way to be sucessfull in life and fails.`,
+      summary: `someone who tends to find the way to be successfull in life and fails.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,

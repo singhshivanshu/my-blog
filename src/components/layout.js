@@ -59,9 +59,7 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()} <i>Shivanshu</i>, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        © {new Date().getFullYear()}&nbsp;<a target="_blank" href="https://shivanshu.netlify.app"><i>Shivanshu</i></a>
       </footer>
     </div>
   )
