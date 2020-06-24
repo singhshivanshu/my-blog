@@ -59,7 +59,7 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}&nbsp;<a target="_blank" href="https://shivanshu.netlify.app"><i>Shivanshu</i></a>
+        © {new Date().getFullYear()}&nbsp;<a target="_blank" rel="noreferrer" href="https://shivanshu.netlify.app"><i>Shivanshu</i></a>
       </footer>
     </div>
   )
