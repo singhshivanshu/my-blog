@@ -6,12 +6,21 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout
+      location={location}
+      title={siteTitle}
+      style={{
+        backgroundColor: "var(--bg)",
+        color: "var(--textNormal)",
+        transition: "color 0.2s ease-out, background 0.2s ease-out",
+      }}
+    >
       <SEO title="Shivanshu blog" />
       <Bio />
       {posts.map(({ node }) => {
@@ -29,14 +38,17 @@ const BlogIndex = ({ data, location }) => {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
-              &nbsp;<small style={{color: "#8a021b"}}>({node.fields.readingTime.text})</small>
+              &nbsp;
+              <small style={{ color: "#8a021b" }}>
+                ({node.fields.readingTime.text})
+              </small>
             </header>
             <section>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
-                />
+              />
             </section>
           </article>
         )
