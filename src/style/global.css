@@ -5,6 +5,11 @@ html {
   color: var(--hlink)
 }
 
+blockquote {
+  color: var(--textNormal);
+  border-left: 0.32813rem solid var(--textNormal);
+}
+
 body {
     --bg: rgb(230, 230, 230);
     --textNormal: #222;
