@@ -1,15 +1,17 @@
 html {
-    background-color: cadetblue;
+  background-color: var(--bg)
+}
+.heading-link {
+  color: var(--hlink)
 }
 
-a {
-    color: #000052
-}body {
-    --bg: white;
+body {
+    --bg: rgb(230, 230, 230);
     --textNormal: #222;
     --textTitle: #222;
-    --textLink: blue;
+    --textLink: #000052;
     --hr: hsla(0, 0%, 0%, 0.2);
+    --hlink: #362066;
   
     background-color: var(--bg);
   }
@@ -17,10 +19,10 @@ a {
   body.dark {
     -webkit-font-smoothing: antialiased;
   
-    --bg: darkslategray;
-    --textNormal: rgba(255, 255, 255, 0.88);
+    --bg: #0f081d;
+    --textNormal: rgba(255,255,255,0.6 );
     --textTitle: white;
-    --textLink: yellow;
+    --textLink: #b17acc;
     --hr: hsla(0, 0%, 100%, 0.2);
+    --hlink: rgb(255, 167, 196)
   }
-

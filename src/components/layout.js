@@ -53,10 +53,10 @@ class Layout extends React.Component {
           }}
         >
           <Link
+          className="heading-link"
             style={{
               boxShadow: "none",
               textDecoration: "none",
-              color: "rgb(255, 167, 196)",
             }}
             to={"/"}
           >
