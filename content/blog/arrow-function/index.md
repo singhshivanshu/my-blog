@@ -115,7 +115,7 @@ class Language {
         console.log(`I'm the regular function of ${this.name}`)
     }
 
-    arrowFunction() {
+    arrowFunction = () => {
         console.log(`I'm the arrow function of ${this.name}`)
     }
 }
