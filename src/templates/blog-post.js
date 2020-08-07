@@ -39,7 +39,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <ShareButton url ={window.location.href} title={post.frontmatter.title} />
+        <ShareButton url ={window.location.href && window.location.href} title={post.frontmatter.title} />
         <hr
           style={{
             marginBottom: rhythm(1),
