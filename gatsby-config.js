@@ -5,10 +5,12 @@ module.exports = {
       name: `Shivanshu,`,
       summary: `someone who tends to find the way to be successfull in life and fails.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A personal blog to share something that my mind pronouce.`,
+    siteUrl: `https://shivanshublog.netlify.app/`,
     social: {
       twitter: `iamshivanshu02`,
+      linkedIn: `singhshivanshu`,
+      facebook: `iamshivanshu`
     },
   },
   plugins: [

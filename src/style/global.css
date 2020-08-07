@@ -4,6 +4,9 @@ html {
 .heading-link {
   color: var(--hlink)
 }
+.reading-time {
+  color: var(--textNormal)
+}
 
 blockquote {
   color: var(--textNormal);
@@ -30,4 +33,8 @@ body {
     --textLink: #b17acc;
     --hr: hsla(0, 0%, 100%, 0.2);
     --hlink: rgb(255, 167, 196)
+  }
+
+  .rcs-button {
+    outline: none
   }

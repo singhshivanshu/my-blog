@@ -5,12 +5,13 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import ShareButton from "../components/ShareButton"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
-
+  
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -38,6 +39,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ShareButton url ={window.location.href} title={post.frontmatter.title} />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -47,7 +49,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <Bio />
         </footer>
       </article>
-
       <nav>
         <ul
           style={{

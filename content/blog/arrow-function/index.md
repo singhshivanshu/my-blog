@@ -112,7 +112,7 @@ class Language {
     }
 
     regularFunction() {
-        console.log(`I'm the regular function ${this.name}`)
+        console.log(`I'm the regular function of ${this.name}`)
     }
 
     arrowFunction() {
@@ -122,14 +122,13 @@ class Language {
 
 let js = new Language()
 
-js.regularFunction()  //output: I'm the regular function Javascript
+js.regularFunction()  //output: I'm the regular function of Javascript
 js.arrowFunction()  //output: I'm the arrow function of Javascript
 
 
 ```
 
-    Does that means there is no difference between them?
-    Let's just see further.
+>> Does that means there is no difference between them? Let's just see further.
 
 ```javascript
 //defining a class Javascript inherited with the property of class Language
@@ -146,7 +145,7 @@ class Javascript extends Language {
 
 let newJs = new Javascript()
 
-newJs.regularFunction() //output: I'm the regular function Javascript class
+newJs.regularFunction() //output: I'm the regular function of Javascript class
 
 // now let's repeat the same with arrowFunction method
 
@@ -165,8 +164,8 @@ let newJs = new Javascript()
 newJs.arrowFunction() // output: newJs.arrowFunction is not a function
 
 ```
-    It's quite absurd to think why arrowFunction was not inherited.
-    Let's get back to Language class and see what really is happening there.
+- It's pretty confusing to think why **arrowFunction** was not inherited.
+- Let's get back to **Language** class and see what really is happening there.
 
 
 ```javascript
@@ -203,6 +202,6 @@ console.log(Language.protoype) // output: {regularFunction: ƒ}
 - As a React developer, I can say that it provides so much ease,by using it we can easily avoid binding the methods every time.
 
 
->> PS. (In technology its never enough in terms of learning, adding to that javascript is considers as stupid language. So, corret me if there is any scope of it.)
+>> PS. (In technology its never enough in terms of learning, adding to that javascript is considerd as stupid language. So, feel free to correct me.)
 
 

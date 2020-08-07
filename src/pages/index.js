@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-
+import ShareButton from "../components/ShareButton"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -39,7 +39,7 @@ const BlogIndex = ({ data, location }) => {
               </h3>
               <small>{node.frontmatter.date}</small>
               &nbsp;
-              <small style={{ color: "#8a021b" }}>
+              <small className="reading-time">
                 ({node.fields.readingTime.text})
               </small>
             </header>
