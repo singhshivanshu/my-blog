@@ -11,6 +11,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  const url = typeof window !== "undefined" && window.location.href
   
   return (
     <Layout location={location} title={siteTitle}>
@@ -39,7 +40,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <ShareButton url ={window.location.href && window.location.href} title={post.frontmatter.title} />
+        <ShareButton url ={url} title={post.frontmatter.title} />
         <hr
           style={{
             marginBottom: rhythm(1),
