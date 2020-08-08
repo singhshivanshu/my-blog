@@ -6,12 +6,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import ShareButton from "../components/ShareButton"
+import { DiscussionEmbed } from 'disqus-react'
+
+
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const url = typeof window !== "undefined" && window.location.href
+  // const disqusConfig = {
+  //   shortname: 'shivanshu blog',
+  //   config: { identifier: post.frontmatter.title }
+  // }
   
   return (
     <Layout location={location} title={siteTitle}>
@@ -41,6 +48,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <ShareButton url ={url} title={post.frontmatter.title} />
+        <DiscussionEmbed shortname="shivanshu-b" config={{ identifier: post.frontmatter.title }}  /> 
         <hr
           style={{
             marginBottom: rhythm(1),
