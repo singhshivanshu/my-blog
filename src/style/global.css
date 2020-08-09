@@ -1,6 +1,9 @@
 html {
   background-color: var(--bg)
 }
+a:hover {
+  color: #0cf;
+}
 .heading-link {
   color: var(--hlink)
 }
