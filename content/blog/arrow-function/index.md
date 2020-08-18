@@ -1,7 +1,7 @@
 ---
 title: Arrow function = () => What + Why?
 date: "2020-08-07"
-description: "Just trying to articulate my understanding of arrow function."
+description: "Trying to articulate my understanding of arrow function."
 
 ---
 
