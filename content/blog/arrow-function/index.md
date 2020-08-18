@@ -202,6 +202,4 @@ console.log(Language.protoype) // output: {regularFunction: ƒ}
 - As a React developer, I can say that it provides so much ease,by using it we can easily avoid binding the methods every time.
 
 
->> PS. (In technology its never enough in terms of learning, adding to that javascript is considerd as stupid language. So, feel free to correct me.)
-
-
+>> PS. (In technology it's never enough in terms of learning, adding to that javascript is considerd as stupid language. So, feel free to correct me.)

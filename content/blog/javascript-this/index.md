@@ -12,7 +12,7 @@ description: "How 'this' works in javascript."
 
 ## _'this'_ w.r.t different contexts
 
-    Before we proceed, I would like to account two statements:
+    Before we proceed, I would like to state two statements:
     1. Conceptually, everything in javascript is considerd as object.
     2. Technically, Object itself is a different entity to work on.
 
@@ -151,7 +151,7 @@ let P1 = new Person1("Harry", "Potter")
 P1.displayName() // output: Name: Harry Potter
 ```
 
-> Note: Both call and apply works similarly, only difference is in the way they accept argument.
+> Note: Both call and apply works similarly, the sonly difference is in the way they accept argument.
 
 ```javascript
 //apply
@@ -204,3 +204,5 @@ P3.displayName() // output: Name: Hermione Granger
 ```
 
 > Conclusion: When a function is called using the call, apply and bind methods then this refers to the value passed as the first argument.
+
+>>> PS. (In technology it's never enough in terms of learning, adding to that javascript is considerd as stupid language. So, feel free to correct me.)
