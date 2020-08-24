@@ -151,7 +151,7 @@ let P1 = new Person1("Harry", "Potter")
 P1.displayName() // output: Name: Harry Potter
 ```
 
-> Note: Both call and apply works similarly, the sonly difference is in the way they accept argument.
+> Note: Both call and apply works similarly, the only difference is in the way they accept argument.
 
 ```javascript
 //apply
