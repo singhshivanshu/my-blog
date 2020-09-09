@@ -48,7 +48,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
         <ShareButton url ={url} title={post.frontmatter.title} />
-        <DiscussionEmbed shortname="shivanshu-b" config={{ identifier: post.frontmatter.title }}  /> 
+        {/* <DiscussionEmbed shortname="shivanshu-b" config={{ identifier: post.frontmatter.title }}  />  */}
         <hr
           style={{
             marginBottom: rhythm(1),
