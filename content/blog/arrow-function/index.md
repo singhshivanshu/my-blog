@@ -14,7 +14,7 @@ description: "Trying to articulate my understanding of arrow function."
 
 
 
-***These definitions might be sounding absurd at first go. So, lets understand it with some code.***
+***These definitions might be sounding absurd at first go. So, lets understand it with some codes.***
 
 ```javascript
 
